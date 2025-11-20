@@ -23,9 +23,8 @@
         <div class="max-w-6xl mx-auto">
             <h1 class="text-4xl font-extrabold tracking-tight mb-2"><i class="fa-solid fa-atom fa-spin-pulse mr-3"></i>The Hydrogen Economy</h1>
             <p class="text-emerald-100 text-lg mb-2">Digital Transcription of Laboratory Board Notes | Sector Coupling & Conversion Modes</p>
-            <p class="text-emerald-100 text-lg">Made with ❤️ by Ahmed, Eric & Yago</p>
+            <p class="text-emerald-100 text-lg">Made with ❤️ by Ahmed, Eric &amp; Yago</p>
         </div>
-        
     </header>
 
     <main class="max-w-6xl mx-auto p-6 space-y-12">
@@ -79,8 +78,7 @@
                         <h4 class="font-bold text-lg text-red-600 mb-2">Green Steel</h4>
                         <i class="fa-solid fa-industry text-red-200 text-4xl"></i>
                     </div>
-                    <p class="text-sm text-slate-500 mb-3">Direct Reduction of Iron Ore </p>
-                    <p class="text-sm text-slate-500 mb-3"> (removing oxygen without carbon). </p>
+                    <p class="text-sm text-slate-500 mb-3">Direct Reduction of Iron Ore (removing oxygen without carbon).</p>
                     <div class="bg-slate-100 p-3 rounded-lg text-center">
                         <span class="chemical-eq">3H<sub>2</sub> + Fe<sub>2</sub>O<sub>3</sub> &rarr; <span class="text-red-600 font-extrabold border-2 border-red-500 rounded px-1">2Fe</span> + 3H<sub>2</sub>O</span>
                     </div>
@@ -184,11 +182,15 @@
                     
                     <!-- Electrolyzer -->
                     <div class="p-8 bg-blue-50">
-                        <h3 class="text-2xl font-bold text-blue-800 mb-2 text-center">Electrolyzer</h3>
-                        <p class="text-center text-blue-600 font-mono text-sm mb-6">Power &rarr; Gas</p>
+                        <h3 class="text-2xl font-bold text-blue-800 mb-1 text-center">Electrolyzer</h3>
+                        <p class="text-center text-slate-500 font-mono text-sm mb-4 font-bold">Power &rarr; Gas</p>
                         
+                        <div class="bg-white p-3 rounded border border-blue-200 mb-6 text-center text-sm">
+                            <span class="font-bold text-slate-700">Input:</span> Water (H<sub>2</sub>O) + Electricity
+                        </div>
+
                         <div class="flex justify-center mb-6">
-                            <div class="w-32 h-32 border-4 border-blue-300 rounded-lg flex flex-col items-center justify-center bg-white">
+                            <div class="w-32 h-32 border-4 border-blue-300 rounded-lg flex flex-col items-center justify-center bg-white shadow-sm">
                                 <i class="fa-solid fa-bolt text-yellow-400 text-2xl mb-2"></i>
                                 <i class="fa-solid fa-arrow-down text-slate-300 mb-1"></i>
                                 <span class="font-bold text-blue-800">H<sub>2</sub>O</span>
@@ -196,38 +198,54 @@
                         </div>
 
                         <div class="space-y-3">
-                            <div class="flex justify-between bg-white p-3 rounded shadow-sm">
-                                <span class="font-bold text-slate-600">Cathode (-)</span>
-                                <span class="text-blue-600 font-mono">Reduction (H2)</span>
+                            <div class="bg-white p-4 rounded shadow-sm border-l-4 border-blue-500">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="font-extrabold text-slate-700">Cathode (-)</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-bold">REDUCTION</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Reduction occurs here<br/><span class="text-blue-600 font-bold">&rarr; Hydrogen (H<sub>2</sub>) is produced</span></p>
                             </div>
-                            <div class="flex justify-between bg-white p-3 rounded shadow-sm">
-                                <span class="font-bold text-slate-600">Anode (+)</span>
-                                <span class="text-blue-600 font-mono">Oxidation (O2)</span>
+                            <div class="bg-white p-4 rounded shadow-sm border-l-4 border-red-500">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="font-extrabold text-slate-700">Anode (+)</span>
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded font-bold">OXIDATION</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Oxidation occurs here<br/><span class="text-red-600 font-bold">&rarr; Oxygen (O<sub>2</sub>) is produced</span></p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Fuel Cell -->
                     <div class="p-8 bg-green-50">
-                        <h3 class="text-2xl font-bold text-green-800 mb-2 text-center">Fuel Cell</h3>
-                        <p class="text-center text-green-600 font-mono text-sm mb-6">Gas &rarr; Power</p>
+                        <h3 class="text-2xl font-bold text-green-800 mb-1 text-center">Fuel Cell</h3>
+                        <p class="text-center text-slate-500 font-mono text-sm mb-4 font-bold">Gas &rarr; Power</p>
+
+                        <div class="bg-white p-3 rounded border border-green-200 mb-6 text-center text-sm">
+                            <span class="font-bold text-slate-700">Input:</span> Hydrogen (H<sub>2</sub>) + Oxygen (O<sub>2</sub>)
+                        </div>
                         
                         <div class="flex justify-center mb-6">
-                            <div class="w-32 h-32 border-4 border-green-300 rounded-lg flex flex-col items-center justify-center bg-white">
-                                <span class="font-bold text-green-800">H<sub>2</sub></span>
+                            <div class="w-32 h-32 border-4 border-green-300 rounded-lg flex flex-col items-center justify-center bg-white shadow-sm">
+                                <span class="font-bold text-green-800">H<sub>2</sub> + O<sub>2</sub></span>
                                 <i class="fa-solid fa-arrow-down text-slate-300 mt-1 mb-2"></i>
                                 <i class="fa-solid fa-lightbulb text-yellow-500 text-2xl"></i>
                             </div>
                         </div>
 
                         <div class="space-y-3">
-                            <div class="flex justify-between bg-white p-3 rounded shadow-sm">
-                                <span class="font-bold text-slate-600">Anode (-)</span>
-                                <span class="text-green-600 font-mono">Oxidation (H2)</span>
+                            <div class="bg-white p-4 rounded shadow-sm border-l-4 border-red-500">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="font-extrabold text-slate-700">Anode (-)</span>
+                                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded font-bold">OXIDATION</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Oxidation occurs here<br/><span class="text-red-600 font-bold">&rarr; H<sub>2</sub> releases electrons</span></p>
                             </div>
-                            <div class="flex justify-between bg-white p-3 rounded shadow-sm">
-                                <span class="font-bold text-slate-600">Cathode (+)</span>
-                                <span class="text-green-600 font-mono">Reduction (O2)</span>
+                            <div class="bg-white p-4 rounded shadow-sm border-l-4 border-blue-500">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="font-extrabold text-slate-700">Cathode (+)</span>
+                                    <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded font-bold">REDUCTION</span>
+                                </div>
+                                <p class="text-sm text-slate-600">Reduction occurs here<br/><span class="text-blue-600 font-bold">&rarr; O<sub>2</sub> accepts electrons</span></p>
                             </div>
                         </div>
                     </div>
